@@ -10,3 +10,18 @@ curried_pow = hany(pow)
 two_to_the = curried_pow(2)
 x = two_to_the(5)
 print(x)
+
+
+def view(re):
+    ice = 4
+    def k(means):
+        return re(means)
+    return k
+
+def review(pr):
+    return re(pr * 2)
+
+ice = 3
+re = view(lambda pr: pr * ice)
+
+review(1)

@@ -1,12 +1,11 @@
-from re import X
-
-
+"""Environments for Higher-Order Functions"""
 def apply_twice(f,x):
     return f(f(x))
 
 def square(x):
     return  x * x
 
+"""Higher-Order Function Example: Repeat"""
 def repeat(f,x):
     """
     >>> repeat(g,5)
@@ -19,13 +18,13 @@ def repeat(f,x):
 def g(y):
     return (y+5) // 3
 
+"""Environments for Nested Definitions"""
 def make_adder(n):
     """
     >>> make_adder(3)(8)
     11
     """
     def adder(k):
-
         return k + n
     return adder
 
