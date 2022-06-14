@@ -48,6 +48,6 @@ def curry2(f):
         return h
     return g
 
-# omg
+# dongqilai
 
 
